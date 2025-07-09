@@ -5,6 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 import { ModeToggle } from "@/components/ui/mode-toggle";
+import LocaleSwitcherWrapper from "@/components/ui/LocaleSwitcherWrapper";
 import { ZapButton } from "@/components/zap-ui/button";
 import { authClient } from "@/zap/lib/auth/client";
 
@@ -83,6 +84,7 @@ export function Navbar() {
           </nav>
 
           <ModeToggle variant={"outline"} />
+          <LocaleSwitcherWrapper variant={"outline"} />
         </div>
       </div>
     </header>

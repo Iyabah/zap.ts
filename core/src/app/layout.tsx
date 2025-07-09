@@ -9,6 +9,7 @@ import { VERCEL } from "@/lib/env.client";
 import { FLAGS } from "@/lib/flags";
 import { ZAP_DEFAULT_METADATA } from "@/zap.config";
 import Providers from "@/zap/providers/providers";
+import LingoServerProvider from "@/zap/providers/lingo-provider";
 
 const font = Font({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
@@ -36,13 +37,15 @@ export default async function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`${font.className} antialiased`}>
-        <Providers ENABLE_POSTHOG={ENABLE_POSTHOG}>
-          {children}
+        <LingoServerProvider>
+          <Providers ENABLE_POSTHOG={ENABLE_POSTHOG}>
+            {children}
 
-          <Toaster />
-          {ENABLE_ANALYTICS && Analytics && <Analytics />}
-          {ENABLE_SPEED_INSIGHTS && SpeedInsights && <SpeedInsights />}
-        </Providers>
+            <Toaster />
+            {ENABLE_ANALYTICS && Analytics && <Analytics />}
+            {ENABLE_SPEED_INSIGHTS && SpeedInsights && <SpeedInsights />}
+          </Providers>
+        </LingoServerProvider>
       </body>
     </html>
   );

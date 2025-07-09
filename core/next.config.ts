@@ -1,6 +1,7 @@
 import createMDX from "@next/mdx";
 import type { NextConfig } from "next";
 import createBundleAnalyzer from "@next/bundle-analyzer";
+import lingoCompiler from "lingo.dev/compiler";
 import { ZAP_DEFAULT_SETTINGS } from "./zap.config";
 
 function buildCSPHeader(): string {
@@ -99,4 +100,10 @@ const withBundleAnalyzer = createBundleAnalyzer({
   enabled: process.env.ANALYZE === "true",
 });
 
-export default withBundleAnalyzer(withMDX(nextConfig));
+// Follow official lingo.dev Next.js integration
+export default lingoCompiler.next({
+  sourceLocale: "en",
+  targetLocales: ["fr", "es", "zh", "ja", "de", "ru", "ar", "ko", "tr"],
+  models: "lingo.dev",
+  rsc: true, // Enable React Server Components support as per docs
+})(withBundleAnalyzer(withMDX(nextConfig)));

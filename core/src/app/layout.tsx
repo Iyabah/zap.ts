@@ -8,8 +8,8 @@ import { Toaster } from "@/components/ui/sonner";
 import { VERCEL } from "@/lib/env.client";
 import { FLAGS } from "@/lib/flags";
 import { ZAP_DEFAULT_METADATA } from "@/zap.config";
-import Providers from "@/zap/providers/providers";
 import LingoServerProvider from "@/zap/providers/lingo-provider";
+import Providers from "@/zap/providers/providers";
 
 const font = Font({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],

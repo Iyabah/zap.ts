@@ -1,8 +1,9 @@
 "use client";
 
 import { LocaleSwitcher } from "lingo.dev/react/client";
-import { Button } from "@/components/ui/button";
 import { Globe } from "lucide-react";
+
+import { Button } from "@/components/ui/button";
 
 interface LocaleSwitcherProps {
   variant?:

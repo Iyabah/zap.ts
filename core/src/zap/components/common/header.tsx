@@ -4,8 +4,8 @@ import { useRouter } from "@bprogress/next/app";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-import { ModeToggle } from "@/components/ui/mode-toggle";
 import LocaleSwitcherWrapper from "@/components/ui/LocaleSwitcherWrapper";
+import { ModeToggle } from "@/components/ui/mode-toggle";
 import { ZapButton } from "@/components/zap-ui/button";
 import { authClient } from "@/zap/lib/auth/client";
 

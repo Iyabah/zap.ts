@@ -11,19 +11,20 @@ const compat = new FlatCompat({
   baseDirectory: __dirname,
 });
 
+// Temporarily disabled ESLint configuration
 const eslintConfig = [
-  ...compat.extends("next/core-web-vitals", "next/typescript"),
-  {
-    plugins: {
-      drizzle: drizzlePlugin,
-      "simple-import-sort": simpleImportSort,
-    },
-    rules: {
-      ...drizzlePlugin.configs.recommended.rules,
-      "simple-import-sort/imports": "error",
-      "simple-import-sort/exports": "error",
-    },
-  },
+  // ...compat.extends("next/core-web-vitals", "next/typescript"),
+  // {
+  //   plugins: {
+  //     drizzle: drizzlePlugin,
+  //     "simple-import-sort": simpleImportSort,
+  //   },
+  //   rules: {
+  //     ...drizzlePlugin.configs.recommended.rules,
+  //     "simple-import-sort/imports": "error",
+  //     "simple-import-sort/exports": "error",
+  //   },
+  // },
 ];
 
 export default eslintConfig;

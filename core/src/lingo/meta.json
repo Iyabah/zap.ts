@@ -1,5 +1,41 @@
 {
   "files": {
+    "app/(public)/forgot-password/page.tsx": {
+      "scopes": {
+        "15/declaration/body/4/argument/1/1/1": {
+          "type": "element",
+          "hash": "06eb3b401515cc4a04f7bca95b58ef0d",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Forgot your password?"
+        },
+        "15/declaration/body/4/argument/1/1/3": {
+          "type": "element",
+          "hash": "15682ec699784b53f32648913429b5b7",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Enter your email address and we'll send you a link to reset your password."
+        },
+        "15/declaration/body/4/argument/1/3/1/1/1/openingElement/2/value/expression/body/1": {
+          "type": "element",
+          "hash": "3ba3f099b1b9be6c35ad797da660cb9f",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Email address"
+        },
+        "15/declaration/body/4/argument/1/3/1/1/1/openingElement/2/value/expression/body/3/1-placeholder": {
+          "type": "attribute",
+          "hash": "3cbb854500cac63513492e7abbc5cff3",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "you@example.com"
+        }
+      }
+    },
     "app/(public)/login/page.tsx": {
       "scopes": {
         "2/declaration/body/0/argument/1/1": {
@@ -21,6 +57,66 @@
           "skip": false,
           "overrides": {},
           "content": "Zap.ts ⚡️"
+        }
+      }
+    },
+    "app/(public)/reset-password/page.tsx": {
+      "scopes": {
+        "15/declaration/body/6/argument/1/1/1": {
+          "type": "element",
+          "hash": "c7c1e656d8f051f26d19bfd9f1e27227",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Reset your password"
+        },
+        "15/declaration/body/6/argument/1/1/3": {
+          "type": "element",
+          "hash": "c78226fab91118ae0cd82fbf93664504",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Enter your new password below."
+        },
+        "15/declaration/body/6/argument/1/3/1/1/1/openingElement/2/value/expression/body/1": {
+          "type": "element",
+          "hash": "80d809edd5d1b66123b18faaac10537b",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "New Password"
+        },
+        "15/declaration/body/6/argument/1/3/1/1/1/openingElement/2/value/expression/body/3/1-placeholder": {
+          "type": "attribute",
+          "hash": "5ee7cd1a4a7fe6fb896e8a0c4b2d7255",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "••••••••"
+        },
+        "15/declaration/body/6/argument/1/3/1/1/3/openingElement/2/value/expression/body/1": {
+          "type": "element",
+          "hash": "140bae95eb2040668118c6244c4a4825",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Confirm Password"
+        },
+        "15/declaration/body/6/argument/1/3/1/1/3/openingElement/2/value/expression/body/3/1-placeholder": {
+          "type": "attribute",
+          "hash": "5ee7cd1a4a7fe6fb896e8a0c4b2d7255",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "••••••••"
+        },
+        "15/declaration/body/6/argument/1/3/1/1/5": {
+          "type": "element",
+          "hash": "450326b5d79da2e6d5260bdf0e17538d",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Reset Password"
         }
       }
     },

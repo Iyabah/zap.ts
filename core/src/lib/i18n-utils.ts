@@ -12,7 +12,8 @@ const LocaleContext = createContext<{
 });
 
 // Simple translation function for now
-const t = (key: string, params?: Record<string, any>) => {
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+const t = (key: string, _params?: Record<string, unknown>) => {
   // This is a placeholder implementation
   // In a real app, you'd want to load translations from your dictionary
   return key;

@@ -2,9 +2,9 @@ import type { NextRequest } from "next/server";
 import { NextResponse } from "next/server";
 
 import { $fetch } from "@/lib/fetch";
+import { lingoMiddleware } from "@/lib/lingo-middleware";
 import { ZAP_DEFAULT_SETTINGS } from "@/zap.config";
 import type { Session } from "@/zap/lib/auth/client";
-import { lingoMiddleware } from "@/lib/lingo-middleware";
 
 const LOGIN_URL = ZAP_DEFAULT_SETTINGS.AUTH.LOGIN_URL;
 

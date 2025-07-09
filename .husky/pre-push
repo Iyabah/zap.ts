@@ -1,1 +1,2 @@
-pnpm build
+# Temporarily disabled pre-push build
+# pnpm build

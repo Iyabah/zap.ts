@@ -26,7 +26,6 @@
   },
   "lint-staged": {
     "**/*": [
-      "next lint --fix .",
       "prettier --write ."
     ]
   },

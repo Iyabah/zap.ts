@@ -4,11 +4,16 @@ import { NextResponse } from "next/server";
 import { $fetch } from "@/lib/fetch";
 import { ZAP_DEFAULT_SETTINGS } from "@/zap.config";
 import type { Session } from "@/zap/lib/auth/client";
+import { lingoMiddleware } from "@/lib/lingo-middleware";
 
 const LOGIN_URL = ZAP_DEFAULT_SETTINGS.AUTH.LOGIN_URL;
 
 export async function middleware(request: NextRequest) {
   try {
+    // Handle Lingo locale detection before anything else
+    // This ensures we're working with supported locales throughout the request lifecycle
+    const preferredLocale = lingoMiddleware(request);
+
     const { pathname } = request.nextUrl;
 
     // Allow public paths
@@ -17,6 +22,10 @@ export async function middleware(request: NextRequest) {
       pathname.startsWith(ZAP_DEFAULT_SETTINGS.BLOG.BASE_PATH)
     ) {
       const requestHeaders = new Headers(request.headers);
+      // Set a custom header that our safe dictionary loader can use
+      if (preferredLocale) {
+        requestHeaders.set("x-preferred-locale", preferredLocale);
+      }
 
       const response = NextResponse.next({
         request: { headers: requestHeaders },
@@ -57,6 +66,12 @@ export async function middleware(request: NextRequest) {
     // Add session and security headers for authenticated requests
     const requestHeaders = new Headers(request.headers);
     requestHeaders.set("x-user-session", JSON.stringify(session));
+
+    // Set a custom header for Lingo with preferred locale
+    const localeForAuth = lingoMiddleware(request);
+    if (localeForAuth) {
+      requestHeaders.set("x-preferred-locale", localeForAuth);
+    }
 
     const response = NextResponse.next({
       request: { headers: requestHeaders },

@@ -10,7 +10,8 @@
 		"lint:fix": "turbo run lint:fix",
 		"format": "turbo run format",
 		"clean": "turbo run clean",
-		"prepare": "husky"
+		"prepare": "husky",
+   		 "start": "turbo run start --filter core"
 	},
 	"devDependencies": {
 		"@changesets/cli": "^2.29.5",
@@ -22,5 +23,8 @@
 		"packages/*",
 		"apps/*",
 		"core/"
-	]
+	],
+	"dependencies": {
+		"@prisma/client": "^6.11.1"
+	}
 }

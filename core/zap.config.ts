@@ -16,7 +16,7 @@ export const BASE_URL = DEV
   ? "http://localhost:3000"
   : "https://demo.zap-ts.alexandretrotel.org";
 
-export type Provider = "apple" | "google";
+export type Provider = "apple" | "google" | "github";
 
 export const ZAP_DEFAULT_SETTINGS: ZapSettings = {
   AI: {
@@ -32,7 +32,7 @@ export const ZAP_DEFAULT_SETTINGS: ZapSettings = {
     LOGIN_URL: "/login",
     REDIRECT_URL_AFTER_SIGN_UP: "/login",
     REDIRECT_URL_AFTER_SIGN_IN: "/app",
-    PROVIDERS: ["apple", "google"],
+    PROVIDERS: ["apple", "google","github"] ,
     PASSWORD_COMPROMISED_MESSAGE:
       "This password has been exposed in a data breach. Please choose a stronger, unique password.",
     PUBLIC_PATHS: [

@@ -148,6 +148,18 @@
         }
       }
     },
+    "components/ui/dialog.tsx": {
+      "scopes": {
+        "9/body/0/argument/3/3/expression/right/3": {
+          "type": "element",
+          "hash": "2c2e22f8424a1031de89063bd0022e16",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Close"
+        }
+      }
+    },
     "components/ui/mode-toggle.tsx": {
       "scopes": {
         "5/declaration/body/1/argument/1/1/5": {
@@ -181,6 +193,154 @@
           "skip": false,
           "overrides": {},
           "content": "System"
+        }
+      }
+    },
+    "components/ui/sheet.tsx": {
+      "scopes": {
+        "9/body/0/argument/3/3/3": {
+          "type": "element",
+          "hash": "2c2e22f8424a1031de89063bd0022e16",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Close"
+        }
+      }
+    },
+    "components/ui/sidebar.tsx": {
+      "scopes": {
+        "22/body/2/consequent/0/argument/1/1/1": {
+          "type": "element",
+          "hash": "85fcd93a6f051c26d057e4b30d392317",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Sidebar"
+        },
+        "22/body/2/consequent/0/argument/1/1/3": {
+          "type": "element",
+          "hash": "51aa5f202c817560f38d3527a9a1366d",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Displays the mobile sidebar."
+        },
+        "23/body/1/argument/3": {
+          "type": "element",
+          "hash": "0ef91fcb33b04612eb8a202f673d7881",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Toggle Sidebar"
+        },
+        "24/body/1/argument-aria-label": {
+          "type": "attribute",
+          "hash": "0ef91fcb33b04612eb8a202f673d7881",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Toggle Sidebar"
+        },
+        "24/body/1/argument-title": {
+          "type": "attribute",
+          "hash": "0ef91fcb33b04612eb8a202f673d7881",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Toggle Sidebar"
+        }
+      }
+    },
+    "zap/components/ai/ai-settings-sheet.tsx": {
+      "scopes": {
+        "15/declaration/body/9/argument/1/1/1": {
+          "type": "element",
+          "hash": "5f8fe5bb22c1e62fd97d88f5bb1d1e31",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "AI Settings"
+        },
+        "15/declaration/body/9/argument/1/1/3": {
+          "type": "element",
+          "hash": "4c6a3980ddbaa1ad7b8d1a8666244d2b",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Configure your AI provider and API key securely."
+        }
+      }
+    },
+    "zap/components/ai/api-key-input.tsx": {
+      "scopes": {
+        "6/declaration/body/1/argument/openingElement/2/value/expression/body/1/1": {
+          "type": "element",
+          "hash": "ce825fec5b3e1f8e27c45b1a63619985",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "API Key"
+        },
+        "6/declaration/body/1/argument/openingElement/2/value/expression/body/3": {
+          "type": "element",
+          "hash": "f5b9b994be4c69f582835cd53cef70c7",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Test API Key"
+        }
+      }
+    },
+    "zap/components/ai/model-select.tsx": {
+      "scopes": {
+        "6/declaration/body/1/argument/openingElement/2/value/expression/body/1": {
+          "type": "element",
+          "hash": "ded909b246142d37d4fdc47ae2eadb3b",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Model"
+        },
+        "6/declaration/body/1/argument/openingElement/2/value/expression/body/3/1/1/1-placeholder": {
+          "type": "attribute",
+          "hash": "1d480b4e7e72a8a62b0e9a831ccda982",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Select a model"
+        }
+      }
+    },
+    "zap/components/ai/provider-select.tsx": {
+      "scopes": {
+        "7/declaration/body/0/argument/openingElement/2/value/expression/body/1": {
+          "type": "element",
+          "hash": "1e13efe72eabf1a7a75f3fb6bd1bd495",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "AI Provider"
+        },
+        "7/declaration/body/0/argument/openingElement/2/value/expression/body/3/1/1/1-placeholder": {
+          "type": "attribute",
+          "hash": "76a9e86bf9379222a50feab4760a028e",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Select a provider"
+        }
+      }
+    },
+    "zap/components/ai/save-settings.tsx": {
+      "scopes": {
+        "2/declaration/body/0/argument/1": {
+          "type": "element",
+          "hash": "a6ff4adaec3082bdd79ab4ebe0f19757",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Save Settings"
         }
       }
     },
@@ -829,6 +989,146 @@
           "skip": false,
           "overrides": {},
           "content": "Or copy and paste this link into your browser:<element:br></element:br>{url}"
+        }
+      }
+    },
+    "zap/components/sidebar/feedback-dialog.tsx": {
+      "scopes": {
+        "13/declaration/body/6/argument/1/1/expression/alternate/1": {
+          "type": "element",
+          "hash": "69f8d6f1af3d8ce3dd904062f5b397f0",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Thank you!"
+        },
+        "13/declaration/body/6/argument/1/1/expression/alternate/3": {
+          "type": "element",
+          "hash": "25e7f50073e259f1224f98761a7cada1",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "We appreciate your input and will use it to improve your experience."
+        },
+        "13/declaration/body/6/argument/1/1/expression/consequent/1/1": {
+          "type": "element",
+          "hash": "d4ef03949c4727169f99032837695678",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Share Your Feedback"
+        },
+        "13/declaration/body/6/argument/1/1/expression/consequent/3/1/1/openingElement/2/value/expression/body/1": {
+          "type": "element",
+          "hash": "d01fcab0e6c2dd4a96ad2df3b181075d",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Rate us (0–10)"
+        },
+        "13/declaration/body/6/argument/1/1/expression/consequent/3/1/3/openingElement/2/value/expression/body/1": {
+          "type": "element",
+          "hash": "376d14ce1cda7d19ee68d526832423ff",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Tell us more (optional)"
+        },
+        "13/declaration/body/6/argument/1/1/expression/consequent/3/1/3/openingElement/2/value/expression/body/3/1-aria-label": {
+          "type": "attribute",
+          "hash": "6e999c83403493b5499822536f61e43a",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Feedback text area"
+        },
+        "13/declaration/body/6/argument/1/1/expression/consequent/3/1/3/openingElement/2/value/expression/body/3/1-placeholder": {
+          "type": "attribute",
+          "hash": "58002a2febe63af7934561dc370b4821",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Share your thoughts..."
+        },
+        "13/declaration/body/6/argument/1/1/expression/consequent/3/1/5": {
+          "type": "element",
+          "hash": "36dbeb3351bacb5c6789d4726f40bd9c",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Submit Feedback"
+        }
+      }
+    },
+    "zap/components/sidebar/sidebar-header.tsx": {
+      "scopes": {
+        "2/declaration/body/0/argument/1/5": {
+          "type": "element",
+          "hash": "6dee9191cf69144d6b569683c49631d8",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Application"
+        }
+      }
+    },
+    "zap/components/sidebar/sidebar-main-section.tsx": {
+      "scopes": {
+        "6/declaration/body/0/argument/1": {
+          "type": "element",
+          "hash": "6dee9191cf69144d6b569683c49631d8",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Application"
+        },
+        "6/declaration/body/0/argument/3/1/expression/0/body/1/3/expression/consequent/1/1/3": {
+          "type": "element",
+          "hash": "04e19de67fe964bc7693d069a3727953",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Toggle"
+        }
+      }
+    },
+    "zap/components/sidebar/sidebar-secondary-section.tsx": {
+      "scopes": {
+        "7/declaration/body/2/argument/1/1/1/1/1/3": {
+          "type": "element",
+          "hash": "5f8fe5bb22c1e62fd97d88f5bb1d1e31",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "AI Settings"
+        },
+        "7/declaration/body/2/argument/1/1/1/3/1/3": {
+          "type": "element",
+          "hash": "1810c8c2ac8bd3dac3ec6153fddcf93a",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Give Feedback"
+        },
+        "7/declaration/body/2/argument/1/1/1/5/1/1/3": {
+          "type": "element",
+          "hash": "8df6777277469c1fd88cc18dde2f1cc3",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Settings"
+        }
+      }
+    },
+    "zap/components/sidebar/sidebar.tsx": {
+      "scopes": {
+        "9/declaration/body/4/argument/1/1/1/1/1/1/1": {
+          "type": "element",
+          "hash": "b209369020a7d70e03164fc34d600a43",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Zap.ts ⚡️"
         }
       }
     },

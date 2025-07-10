@@ -1,0 +1,12 @@
+{
+  "typescript.preferences.includePackageJsonAutoImports": "off",
+  "typescript.exclude": ["**/node_modules/**"],
+  "files.exclude": {
+    "**/node_modules/**/*.json": false
+  },
+  "typescript.validate.enable": true,
+  "typescript.format.enable": true,
+  "files.watcherExclude": {
+    "**/node_modules/**": true
+  }
+}

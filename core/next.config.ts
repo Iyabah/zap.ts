@@ -105,5 +105,6 @@ export default lingoCompiler.next({
   sourceLocale: "en",
   targetLocales: ["fr", "es", "zh", "ja", "de", "ru", "ar", "ko", "tr"],
   models: "lingo.dev",
-  rsc: true, // Enable React Server Components support as per docs
+  // rsc: true, // Enable React Server Components support as per docs
 })(withBundleAnalyzer(withMDX(nextConfig)));
+// export default withBundleAnalyzer(withMDX(nextConfig));

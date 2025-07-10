@@ -1,10 +1,10 @@
 "use client";
 
+import * as React from "react";
+import { Fragment, useState } from "react";
+
 import { Bot, HelpCircle, Settings } from "lucide-react";
 import Link from "next/link";
-import * as React from "react";
-import { useState } from "react";
-
 import {
   SidebarGroup,
   SidebarGroupContent,
